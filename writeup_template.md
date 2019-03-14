@@ -8,43 +8,53 @@
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
+
+
+The goal of this project is to:
 * Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
 
 
 [//]: # (Image References)
 
-[image1]: ./test_images_outputsolidWhiteCurve.jpg_step1.jpg "Grayscale"
+[image1]: ./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve"
+[image2]: ./test_images_output/solidWhiteRight.jpg "solidWhiteRight"
+[image3]: ./test_images_output/solidYellowCurve.jpg "solidYellowCurve"
+[image4]: ./test_images_output/solidYellowCurve2.jpg "solidYellowCurve2"
+[image5]: ./test_images_output/solidYellowLeft.jpg "solidYellowLeft"
+[image6]: ./test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch"
 
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline Description 
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale,
+This pipeline includes following six steps:
+* Step 1: Converting the images to grayscale
+* Step2: Applying Gaussian smoothing 
+* Step3: Applying Canny Edge Detection 
+* Step4: Selecting the region of interest 
+* Step5: Applying Hough Tranform line detection
+* Step6: Combining images.
 
-
-then I applied Gaussian smoothing to the grayscale image.
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by getting the lines' slopes
 
 ![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings with the current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+* It does not support curvy lanes very well. Also the video process time is a little bit long.
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improvements to the current pipeline
 
-A possible improvement would be to ...
+* Enhance curvy lane support.
+* Improve the pipeline performance.
 
-Another potential improvement could be to ...
