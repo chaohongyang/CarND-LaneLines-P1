@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_outputsolidWhiteCurve.jpg_step1.jpg "Grayscale"
 
 ---
 
@@ -25,7 +25,6 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale,
 
-![alt text][test_images_outputsolidWhiteCurve.jpg_step1.jpg]
 
 then I applied Gaussian smoothing to the grayscale image.
 
